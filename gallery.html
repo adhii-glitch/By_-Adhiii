@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery - Amul & Adhiiiii</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="gallery-page">
+
+  <h2>Our Memories 💞</h2>
+
+  <div class="gallery">
+    <img src="assets/photo1.jpg" onclick="openLetter()">
+    <video src="assets/video1.mp4" autoplay muted loop onclick="openLetter()"></video>
+    <video src="assets/video2.mp4" autoplay muted loop onclick="openLetter()"></video>
+    <video src="assets/video3.mp4" autoplay muted loop onclick="openLetter()"></video>
+    <video src="assets/video4.mp4" autoplay muted loop onclick="openLetter()"></video>
+  </div>
+
+  <!-- Love Letter Popup -->
+  <div id="letterPopup" class="popup">
+    <div class="popup-content" style="background-image: url('assets/photo1.jpg'); background-size: cover; background-position: center; backdrop-filter: blur(6px);">
+      <div class="letter-text">
+        <p>
+          Hey Amul,<br><br>
+          From the very first day we spoke, you weren’t just someone I liked…<br>
+          You became my best friend,<br>
+          my secret keeper,<br>
+          my constant support,<br>
+          and the smile I never knew I was missing.<br><br>
+          You call me “Adhiiiii” — stretching my name with love,<br>
+          and every time you say it,<br>
+          I feel like I belong.<br><br>
+          In this friendship, I found laughter, comfort, and trust.<br>
+          In this love, I’ve found something even deeper —<br>
+          a connection that words can barely describe.<br><br>
+          I don’t want to lose either.<br>
+          Not the friendship,<br>
+          not the love,<br>
+          not you.<br><br>
+          So today, I want to ask you something with all my heart:<br>
+          <b>Will you be mine — not just as my best friend, but as my forever?</b><br><br>
+          Let’s turn this friendship into the most beautiful story.<br>
+          Let’s build something that lasts —<br>
+          with laughter, with love, with us.<br><br>
+          <b>Just Amul and Adhiiiii, forever…</b>
+        </p>
+
+        <button id="nikiiiBtn">By Nikiii 💕</button>
+        <div id="responseBox" style="display:none; margin-top:20px;">
+          <textarea id="nikiiiResponse" placeholder="Write your reply here..." rows="4" cols="40"></textarea><br>
+          <button onclick="saveResponse()">Submit</button>
+        </div>
+        <div id="savedResponse" style="margin-top:20px; font-style:italic; color:#ff4081;"></div>
+      </div>
+      <span class="close" onclick="closeLetter()">&times;</span>
+    </div>
+  </div>
+
+  <footer>
+    Made with 💖 by Your Adhiiiii for My Amul
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
